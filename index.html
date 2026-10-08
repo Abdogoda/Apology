@@ -340,7 +340,7 @@ footer.scene-foot[hidden] { display: none; }
   border-radius: var(--radius-pill);
   padding: 0.55em 2.4em;
   height: 44px;
-  box-shadow: 0 0 0 4px var(--blush), 0 8px 22px rgba(21, 67, 96, 0.16);
+  box-shadow: 0 0 0 4px var(--blush), 0 8px 22px rgba(122, 29, 61, 0.16);
   transition: all 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   display: inline-flex;
   align-items: center;
@@ -349,16 +349,16 @@ footer.scene-foot[hidden] { display: none; }
 #next-btn:hover:not(:disabled) {
   transform: translateY(-2px);
   background: var(--note);
-  box-shadow: 0 0 0 5px var(--blush), 0 10px 26px rgba(21, 67, 96, 0.22);
+  box-shadow: 0 0 0 5px var(--blush), 0 10px 26px rgba(122, 29, 61, 0.22);
 }
 #next-btn:disabled {
   opacity: 0.45;
   cursor: not-allowed;
   box-shadow: none;
   transform: none;
-  background: #e5edf4;
-  border-color: #b0c4d8;
-  color: #7a94ad;
+  background: var(--note);
+  border-color: var(--blush);
+  color: var(--ink-muted);
 }
 
 /* Mascot & Speech Bubble Row */
@@ -390,7 +390,7 @@ footer.scene-foot[hidden] { display: none; }
   padding: 8px 16px;
   max-width: 250px;
   line-height: 1.3;
-  box-shadow: 0 4px 14px rgba(21, 67, 96, 0.08);
+  box-shadow: 0 4px 14px rgba(122, 29, 61, 0.08);
   animation: floatBubble 3s ease-in-out infinite;
 }
 @keyframes floatBubble {
@@ -404,7 +404,7 @@ footer.scene-foot[hidden] { display: none; }
   border-radius: 20px;
   overflow: hidden;
   border: 2.5px solid var(--white);
-  box-shadow: 0 6px 18px rgba(21, 67, 96, 0.16);
+  box-shadow: 0 6px 18px rgba(122, 29, 61, 0.16);
   flex-shrink: 0;
   background: #000;
 }
@@ -767,8 +767,8 @@ footer.scene-foot[hidden] { display: none; }
   background: var(--white);
   border-radius: 16px;
   padding: 12px 16px;
-  box-shadow: 0 6px 16px rgba(21, 67, 96, 0.08);
-  border: 1.5px solid #d4e6f1;
+  box-shadow: 0 6px 16px rgba(122, 29, 61, 0.08);
+  border: 1.5px solid var(--blush);
   width: 100%;
   box-sizing: border-box;
 }
@@ -931,12 +931,12 @@ footer.scene-foot[hidden] { display: none; }
   cursor: pointer;
   z-index: 1;
   transition: transform 0.35s cubic-bezier(0.175, 0.885, 0.32, 1.275), filter 0.3s ease;
-  filter: drop-shadow(0 10px 20px rgba(21, 67, 96, 0.16));
+  filter: drop-shadow(0 10px 20px rgba(122, 29, 61, 0.16));
   animation: jarIdleFloat 3.8s ease-in-out infinite;
 }
 .jar-btn:hover {
   transform: translateY(-4px) scale(1.03) rotate(-1deg);
-  filter: drop-shadow(0 14px 26px rgba(46, 134, 193, 0.28));
+  filter: drop-shadow(0 14px 26px rgba(210, 92, 122, 0.3));
 }
 .jar-btn:active {
   transform: translateY(2px) scale(0.97);
@@ -1116,8 +1116,8 @@ footer.scene-foot[hidden] { display: none; }
   border-radius: 24px;
   padding: 20px 18px 18px;
   text-align: center;
-  box-shadow: 0 16px 36px rgba(21, 67, 96, 0.12);
-  border: 2px solid #d4e6f1;
+  box-shadow: 0 16px 36px rgba(122, 29, 61, 0.12);
+  border: 2px solid var(--blush);
   width: 100%;
   box-sizing: border-box;
 }
@@ -1197,25 +1197,25 @@ footer.scene-foot[hidden] { display: none; }
   font-family: var(--display);
   font-size: 1.1rem;
   color: var(--white);
-  background: linear-gradient(135deg, #2e86c1 0%, #1b4f72 100%);
+  background: linear-gradient(135deg, var(--rose) 0%, var(--berry) 100%);
   border: none;
-  box-shadow: 0 6px 18px rgba(46, 134, 193, 0.4);
+  box-shadow: 0 6px 18px rgba(210, 92, 122, 0.4);
   z-index: 10;
   transform-origin: center;
   transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.2s ease;
 }
 #yes-forgive-btn:hover {
-  box-shadow: 0 8px 22px rgba(46, 134, 193, 0.55);
+  box-shadow: 0 8px 22px rgba(210, 92, 122, 0.55);
 }
 
 #no-dodge-btn {
   font-family: var(--hand);
   font-size: 1.2rem;
   font-weight: 700;
-  background: #f8fbfe;
+  background: #ffffff;
   color: var(--ink-muted);
-  border: 1.5px solid #d4e6f1;
-  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.05);
+  border: 1.5px solid var(--blush);
+  box-shadow: 0 3px 8px rgba(122, 29, 61, 0.06);
   z-index: 20;
   transform-origin: center;
   transition: left 0.24s cubic-bezier(0.2, 0.8, 0.25, 1), 
@@ -1224,7 +1224,7 @@ footer.scene-foot[hidden] { display: none; }
               background-color 0.2s ease;
 }
 #no-dodge-btn:hover {
-  background: #ebf5fb;
+  background: var(--paper);
 }
 
 /* ==========================================================================
@@ -1238,8 +1238,8 @@ footer.scene-foot[hidden] { display: none; }
   margin: 14px auto 18px;
   border-radius: 16px;
   overflow: hidden;
-  box-shadow: 0 8px 24px rgba(21, 67, 96, 0.15);
-  border: 2px solid #aed6f1;
+  box-shadow: 0 8px 24px rgba(122, 29, 61, 0.15);
+  border: 2px solid var(--blush);
 }
 .scene[data-idx="5"].active .victory-video-frame {
   animation: victoryFrameEnter 0.65s cubic-bezier(0.34, 1.5, 0.64, 1) both 0.18s;
@@ -1419,41 +1419,41 @@ footer.scene-foot[hidden] { display: none; }
             <defs>
               <linearGradient id="jarGlassShine" x1="0%" y1="0%" x2="100%" y2="0%">
                 <stop offset="0%" stop-color="#ffffff" stop-opacity="0.88"/>
-                <stop offset="16%" stop-color="#f0f7fc" stop-opacity="0.35"/>
+                <stop offset="16%" stop-color="#fdf2f0" stop-opacity="0.4"/>
                 <stop offset="84%" stop-color="#ffffff" stop-opacity="0.2"/>
-                <stop offset="100%" stop-color="#cce5f6" stop-opacity="0.65"/>
+                <stop offset="100%" stop-color="#f6cfd7" stop-opacity="0.65"/>
               </linearGradient>
               <linearGradient id="jarLidGrad" x1="0%" y1="0%" x2="0%" y2="100%">
-                <stop offset="0%" stop-color="#5dade2"/>
-                <stop offset="45%" stop-color="#2e86c1"/>
-                <stop offset="100%" stop-color="#1b4f72"/>
+                <stop offset="0%" stop-color="#e893a7"/>
+                <stop offset="45%" stop-color="#d25c7a"/>
+                <stop offset="100%" stop-color="#7a1d3d"/>
               </linearGradient>
               <filter id="jarSoftGlow" x="-20%" y="-20%" width="140%" height="140%">
-                <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#2e86c1" flood-opacity="0.18"/>
+                <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#d25c7a" flood-opacity="0.2"/>
               </filter>
               <filter id="labelShadow" x="-20%" y="-20%" width="140%" height="140%">
-                <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#154360" flood-opacity="0.12"/>
+                <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#7a1d3d" flood-opacity="0.12"/>
               </filter>
             </defs>
 
             <!-- Ground Shadow -->
-            <ellipse cx="110" cy="248" rx="76" ry="9" fill="#154360" opacity="0.12"/>
+            <ellipse cx="110" cy="248" rx="76" ry="9" fill="#7a1d3d" opacity="0.12"/>
 
             <!-- Jar Glass Body -->
             <path d="M56 46 H164 C180 46 196 66 196 98 V214 C196 234 180 246 158 246 H62 C40 246 24 234 24 214 V98 C24 66 40 46 56 46 Z" 
-                  fill="url(#jarGlassShine)" stroke="#154360" stroke-width="2.6" filter="url(#jarSoftGlow)"/>
+                  fill="url(#jarGlassShine)" stroke="#7a1d3d" stroke-width="2.6" filter="url(#jarSoftGlow)"/>
 
             <!-- Bottom Glass Rim Base -->
             <path d="M42 226 C42 240 60 244 110 244 C160 244 178 240 178 226" 
-                  fill="none" stroke="#154360" stroke-width="1.4" opacity="0.25"/>
+                  fill="none" stroke="#7a1d3d" stroke-width="1.4" opacity="0.25"/>
 
             <!-- Ambient Fairy Light Dots -->
             <g class="jar-fairy-dots">
               <circle cx="68" cy="110" r="3.5" fill="#f5b041" opacity="0.85"/>
-              <circle cx="152" cy="120" r="2.8" fill="#5dade2" opacity="0.75"/>
+              <circle cx="152" cy="120" r="2.8" fill="#e893a7" opacity="0.85"/>
               <circle cx="110" cy="95" r="3" fill="#ffd166" opacity="0.9"/>
-              <circle cx="85" cy="145" r="2.5" fill="#48c9b0" opacity="0.75"/>
-              <circle cx="140" cy="155" r="3.2" fill="#85c1e9" opacity="0.85"/>
+              <circle cx="85" cy="145" r="2.5" fill="#d25c7a" opacity="0.8"/>
+              <circle cx="140" cy="155" r="3.2" fill="#f6cfd7" opacity="0.9"/>
             </g>
 
             <!-- Dynamic Origami Notes Group -->
@@ -1464,23 +1464,23 @@ footer.scene-foot[hidden] { display: none; }
             <path d="M180 92 C184 116 184 175 178 200" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" fill="none" opacity="0.45"/>
 
             <!-- Jar Neck & Twine -->
-            <rect x="48" y="34" width="124" height="15" rx="5" fill="#f0f7fc" stroke="#154360" stroke-width="2.2"/>
-            <line x1="46" y1="41" x2="174" y2="41" stroke="#2e86c1" stroke-width="2" stroke-dasharray="5 3"/>
+            <rect x="48" y="34" width="124" height="15" rx="5" fill="#fdf2f0" stroke="#7a1d3d" stroke-width="2.2"/>
+            <line x1="46" y1="41" x2="174" y2="41" stroke="#d25c7a" stroke-width="2" stroke-dasharray="5 3"/>
 
             <!-- Vintage Paper Label "Promises" -->
             <g class="jar-tag-label" filter="url(#labelShadow)">
-              <rect x="50" y="114" width="120" height="42" rx="10" fill="#ffffff" stroke="#154360" stroke-width="2.2"/>
-              <rect x="54" y="118" width="112" height="34" rx="7" fill="none" stroke="#85c1e9" stroke-width="1.2" stroke-dasharray="4 2.5"/>
-              <text x="110" y="141" text-anchor="middle" font-family="'Caveat', cursive" font-weight="700" font-size="19" fill="#154360">promises</text>
+              <rect x="50" y="114" width="120" height="42" rx="10" fill="#ffffff" stroke="#7a1d3d" stroke-width="2.2"/>
+              <rect x="54" y="118" width="112" height="34" rx="7" fill="none" stroke="#e893a7" stroke-width="1.2" stroke-dasharray="4 2.5"/>
+              <text x="110" y="141" text-anchor="middle" font-family="'Caveat', cursive" font-weight="700" font-size="19" fill="#7a1d3d">promises</text>
             </g>
 
             <!-- Lid -->
-            <rect x="38" y="14" width="144" height="23" rx="9" fill="url(#jarLidGrad)" stroke="#154360" stroke-width="2.3"/>
+            <rect x="38" y="14" width="144" height="23" rx="9" fill="url(#jarLidGrad)" stroke="#7a1d3d" stroke-width="2.3"/>
             <rect x="44" y="18" width="132" height="5" rx="2.5" fill="#ffffff" opacity="0.38"/>
 
             <!-- Cute Bow Knot -->
-            <path d="M102 41 C90 34 88 26 100 28 C108 30 110 37 110 41 C110 37 112 30 120 28 C132 26 130 34 118 41 Z" fill="#aed6f1" stroke="#154360" stroke-width="1.6"/>
-            <circle cx="110" cy="41" r="3.5" fill="#2e86c1" stroke="#154360" stroke-width="1.2"/>
+            <path d="M102 41 C90 34 88 26 100 28 C108 30 110 37 110 41 C110 37 112 30 120 28 C132 26 130 34 118 41 Z" fill="#f6cfd7" stroke="#7a1d3d" stroke-width="1.6"/>
+            <circle cx="110" cy="41" r="3.5" fill="#d25c7a" stroke="#7a1d3d" stroke-width="1.2"/>
           </svg>
         </button>
       </div>
@@ -1625,7 +1625,7 @@ const dotsContainer = document.getElementById("hearts-dots");
 for (let i = 0; i < totalScenes; i++) {
   dotsContainer.insertAdjacentHTML(
     "beforeend",
-    `<svg viewBox="0 0 24 24" fill="${i === 0 ? '#2e86c1' : 'none'}" stroke="#154360" stroke-width="1.8">
+    `<svg viewBox="0 0 24 24" fill="${i === 0 ? '#d25c7a' : 'none'}" stroke="#7a1d3d" stroke-width="1.8">
       <path d="M12 21s-7.5-4.6-9.6-9.3C.9 8.3 3 4.5 6.7 4.5c2.1 0 3.6 1.1 4.3 2.4.7-1.3 2.2-2.4 4.3-2.4 3.7 0 5.8 3.8 4.3 7.2C19.5 16.4 12 21 12 21z"/>
     </svg>`
   );
@@ -1633,7 +1633,7 @@ for (let i = 0; i < totalScenes; i++) {
 
 function updateDots() {
   [...dotsContainer.children].forEach((dot, idx) => {
-    dot.setAttribute("fill", idx <= curScene ? "#2e86c1" : "none");
+    dot.setAttribute("fill", idx <= curScene ? "#d25c7a" : "none");
   });
 }
 
@@ -1832,8 +1832,8 @@ function updatePromiseDots(idx) {
 
 function drawJarNotes() {
   const colors = [
-    "#5dade2", "#85c1e9", "#aed6f1", "#48c9b0", "#f5b041",
-    "#3498db", "#2e86c1", "#76d7c4", "#ebf5fb", "#bb86fc"
+    "#d25c7a", "#e893a7", "#f6cfd7", "#fbe7da", "#f5b041",
+    "#b84362", "#ff9bb2", "#fdedeb", "#f48fb1", "#ffd166"
   ];
   
   // Folded origami notes, paper hearts & rolled scrolls filling the lower jar gracefully
@@ -1869,15 +1869,15 @@ function drawJarNotes() {
       markup += `
         <g transform="translate(${n.x}, ${n.y}) rotate(${n.rot}) scale(0.92)">
           <path d="M12 21s-7.5-4.6-9.6-9.3C.9 8.3 3 4.5 6.7 4.5c2.1 0 3.6 1.1 4.3 2.4.7-1.3 2.2-2.4 4.3-2.4 3.7 0 5.8 3.8 4.3 7.2C19.5 16.4 12 21 12 21z"
-                fill="${c}" stroke="#154360" stroke-width="1.3" opacity="0.95"/>
+                fill="${c}" stroke="#7a1d3d" stroke-width="1.3" opacity="0.95"/>
         </g>`;
     } else {
       markup += `
         <g transform="rotate(${n.rot} ${n.x + n.w/2} ${n.y + n.h/2})">
           <rect x="${n.x}" y="${n.y}" width="${n.w}" height="${n.h}" rx="3"
-                fill="${c}" stroke="#154360" stroke-width="1.2" opacity="0.95"/>
+                fill="${c}" stroke="#7a1d3d" stroke-width="1.2" opacity="0.95"/>
           <line x1="${n.x + 3}" y1="${n.y + n.h/2}" x2="${n.x + n.w - 3}" y2="${n.y + n.h/2}" 
-                stroke="#154360" stroke-width="0.75" stroke-dasharray="2 1.5" opacity="0.45"/>
+                stroke="#7a1d3d" stroke-width="0.75" stroke-dasharray="2 1.5" opacity="0.45"/>
         </g>`;
     }
   }
@@ -2110,7 +2110,7 @@ function fireConfetti() {
   canvas.height = window.innerHeight * dpr;
   ctx.scale(dpr, dpr);
 
-  const colors = ["#5dade2", "#2e86c1", "#85c1e9", "#aed6f1", "#f5b041", "#48c9b0", "#ffffff"];
+  const colors = ["#d25c7a", "#e893a7", "#f6cfd7", "#7a1d3d", "#f5b041", "#fbe7da", "#ffffff"];
   const particles = Array.from({ length: 110 }, () => ({
     x: Math.random() * window.innerWidth,
     y: -20 - Math.random() * window.innerHeight * 0.5,
